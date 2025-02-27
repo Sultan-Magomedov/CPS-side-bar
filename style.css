@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "TT-Lakes";
+  src: url("./fonts/TTLakes-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT-Lakes";
+  src: url("./fonts/TTLakes-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT-Lakes";
+  src: url("./fonts/TTLakes-DemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT-Lakes";
+  src: url("./fonts/TTLakes-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+:where(ul[class]) {
+  list-style: none;
+}
+
+:where(address[class]) {
+  font-style: normal;
+}
+
+p {
+  --paragraphMarginBottom: 24px;
+
+  margin-block: 0;
+}
+
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  color: inherit;
+}
+button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+:has(:target) {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+svg *[fill] {
+  fill: currentColor;
+}
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+svg * {
+  transition-property: fill, stroke;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+figure {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+}
+.cps-sidebar {
+  font-family: "TT-Lakes", sans-serif;
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  width: 320px;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+    -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+  padding: 23px 24px;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  min-height: 770px;
+}
+.icons-wrapper {
+  background-color: #ff3e79;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.icons-wrapper > img {
+  margin-inline: auto;
+}
+.icons-wrapper--padding-top {
+  padding-top: 11px;
+}
+.cps-sidebar__header {
+  display: flex;
+  margin-bottom: 46px;
+}
+.logo--margin--inline {
+  margin-right: 78px;
+  margin-left: 17px;
+}
+.cps-sidebar__item--active {
+  color: #7e7e82;
+  position: relative;
+}
+.cps-sidebar__item--active::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: -4px;
+  display: block;
+  height: 32px;
+  width: 8px;
+  background-color: #41f6d7;
+  border-radius: 20px;
+}
+.cps-sidebar__item {
+  color: #7e7e82;
+  position: relative;
+}
+.cps-sidebar__item:hover::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: -4px;
+  display: block;
+  height: 32px;
+  width: 8px;
+  background-color: #41f6d7;
+  border-radius: 20px;
+}
+.cps-sidebar__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.cps-sidebar__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.footer__icons-wrapper {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.cps-sidebar__mail,
+.cps-sidebar__tel {
+  display: block;
+}
+.cps-sidebar__mail {
+  margin-bottom: 12px;
+}
+.cps-sidebar__tel {
+  font-weight: bold;
+  line-height: 133%;
+  letter-spacing: -0.03em;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.footer__lang-list {
+  display: flex;
+  gap: 7px;
+}
+.footer__lang-item--active {
+  color: #7e7e82;
+}
+
+.button:hover,
+.logo__image:hover,
+.cps-sidebar__item:hover,
+.cps-sidebar__mail:hover,
+.cps-sidebar__tel:hover {
+  opacity: 0.6;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}

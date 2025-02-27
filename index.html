@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CPS-side-bar</title>
+  </head>
+  <body>
+    <aside class="cps-sidebar">
+      <header class="cps-sidebar__header">
+        <button class="button" type="button">
+          <div class="icons-wrapper icons-wrapper--padding-top">
+            <img
+              src="./icons/noburger.svg"
+              alt="Закрыть меню"
+              class="button__noburger-image"
+            />
+          </div></button
+        ><a class="logo logo--margin--inline"
+          ><img
+            src="./icons/logo.svg"
+            alt="CPS логотип"
+            class="logo__image" /></a
+        ><button class="button" type="button">
+          <div class="icons-wrapper icons-wrapper--padding-top">
+            <img
+              src="./icons/search.svg"
+              alt="Поиск"
+              class="button__search-image"
+            />
+          </div>
+        </button>
+      </header>
+      <section class="cps-sidebar__content">
+        <nav class="cps-sidebar__nav">
+          <ul class="cps-sidebar__list">
+            <li class="cps-sidebar__item cps-sidebar__item--active">
+              <a href="#" class="cps-sidebar__link">Ремонт техники</a>
+            </li>
+            <li class="cps-sidebar__item">
+              <a href="#" class="cps-sidebar__link">Услуги и сервисы</a>
+            </li>
+            <li class="cps-sidebar__item">
+              <a href="#" class="cps-sidebar__link">Корпоративным клиентам</a>
+            </li>
+            <li class="cps-sidebar__item">
+              <a href="#" class="cps-sidebar__link">Продавцам техники</a>
+            </li>
+            <li class="cps-sidebar__item">
+              <a href="#" class="cps-sidebar__link">Партнерам</a>
+            </li>
+            <li class="cps-sidebar__item">
+              <a href="#" class="cps-sidebar__link">Производителям</a>
+            </li>
+            <li class="cps-sidebar__item">
+              <a href="#" class="cps-sidebar__link">Наши сервисные центры</a>
+            </li>
+            <li class="cps-sidebar__item">
+              <a href="#" class="cps-sidebar__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <footer class="cps-sidebar__footer footer">
+          <div class="footer__icons-wrapper">
+            <button class="button" type="button">
+              <div class="icons-wrapper icons-wrapper--padding-top">
+                <img
+                  src="./icons/call.svg"
+                  alt="Позвонить"
+                  class="button__call-image"
+                />
+              </div></button
+            ><button class="button" type="button">
+              <div class="icons-wrapper icons-wrapper--padding-top">
+                <img
+                  src="./icons/chat.svg"
+                  alt="Перейти в чат"
+                  class="button__chat-image"
+                />
+              </div></button
+            ><button class="button" type="button">
+              <div class="icons-wrapper icons-wrapper--padding-top">
+                <img
+                  src="./icons/profile.svg"
+                  alt="Ваш профиль"
+                  class="button__profile-image"
+                />
+              </div>
+            </button>
+          </div>
+          <a href="mailto:mail@cps.com" class="cps-sidebar__mail"
+            >mail@cps.com</a
+          ><a href="tel:+78008908900" class="cps-sidebar__tel"
+            >8 800 890 8900</a
+          >
+          <ul class="footer__lang-list">
+            <li class="footer__lang-item footer__lang-item--active">
+              <button class="button" type="button">RU</button>
+            </li>
+            <li class="footer__lang-item">
+              <button class="button" type="button">EN</button>
+            </li>
+            <li class="footer__lang-item">
+              <button class="button" type="button">CH</button>
+            </li>
+          </ul>
+        </footer>
+      </section>
+    </aside>
+  </body>
+</html>
